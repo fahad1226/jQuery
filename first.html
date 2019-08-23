@@ -23,17 +23,14 @@
         </div>
     </body>
 
-
     <script>
         $(document).ready(function(){
             $("#btn1").click(function(){
                 $("#box").animate({
                     marginLeft: '700px',
-                    opacity: '0.5',
-                    height: '200px'
-                },5000,function(){
-                    alert('completed');
-                });
+                    opacity: '0.8',
+                    height: '300px'
+                },5000).slideUp(3000).slideDown(3000);
             });
             $("#btn2").click(function(){
                 $("#box").stop();
