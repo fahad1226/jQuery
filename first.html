@@ -16,9 +16,29 @@
         }
     </style>
     <body>
-        <div class="container">
-            <h1 class="box">jQuery..</h1>
+        <div class="container py-2">
+            <button class="btn btn-secondary btn-lg" type="button" id="btn1" >start</button>
+            <button class="btn btn-danger btn-lg" type="button" id="btn2" >stop</button>
+            <h1 id="box" class="box text-white">jQuery..</h1>
         </div>
     </body>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#box").animate({
+                    marginLeft: '700px',
+                    opacity: '0.5',
+                    height: '200px'
+                },5000,function(){
+                    alert('completed');
+                });
+            });
+            $("#btn2").click(function(){
+                $("#box").stop();
+            });
+        });
+    </script>
 
 </html>
