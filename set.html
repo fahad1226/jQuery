@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>set in jQuery</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="text-muted">Play with Setter</h3>
+            <div class="row">
+                <div class="col-10">
+                    <div class="form-group">
+                        <label for="name">Your Name?</label>
+                        <input id="name" type="text" class="form-control" placeholder="Name">
+                        <label for="email">Your Email?</label>
+                        <input type="email" id="email" class="form-control" placeholder="Email" value="">
+                        <label for="dept">Department?</label>
+                        <input type="text" class="form-control" placeholder="Department" id="dept" value="">
+                        <br>
+                        <button id="btn" type="submit" class="btn btn-primary btn-lg" name="button">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                let name = $("#name").val();
+                let email = $("#email").val();
+                let department = $("#dept").val();
+                document.write(name);
+                document.write("<br>");
+                document.write(email);
+                document.write("<br>");
+                document.write(department);
+            });
+        });
+
+    </script>
+
+</html>
