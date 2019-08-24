@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="jquery.js"></script>
+    </head>
+    <style media="screen">
+
+        .box {
+            width: 350px;
+            border: 15px solid grey;
+            padding: 50px;
+            margin: 20px;
+            background-color: black;
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <h3 class="text-danger">this is about jQuery</h3>
+            <button id="btn" type="button" class="btn btn-secondary btn-lg" name="button">Style</button>
+            <h1 id="stl">Jquery...</h1>
+        </div>
+    </body>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#stl").addClass("box");
+            });
+        });
+    </script>
+
+</html>
