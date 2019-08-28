@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<style>
+
+    header{
+        background: gray;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 4px #000 solid;
+        margin-bottom: 10px;
+    }
+
+</style>
+<body>
+    <header>
+        <h1>About jQuery</h1>
+    </header>
+   
+    <div class="container">
+        <h2 id="one" class="text-muted">Heading One</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti qui <span>commodi expedita sunt n</span> isi itaque at iste enim quisquam officiis sint natus suscipit cumque corporis, a tempora. Cum quibusdam temporibus culpa magni aspernatur impedit perferendis, praesentium porro consectetur dolor.</p>
+
+        <h2 id="two" class="text-muted">Heading Two</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam eveniet possimus, maxime cum quaerat quae totam dicta? Debitis ducimus quibusdam sit <span>in dolorum dolor, temporibus odio</span> nam nihil quaerat. Quos unde porro totam corporis necessitatibus tenetur iusto, eaque accusantium facilis.</p>
+
+        <ul id="list">
+            <li>list one </li>
+            <li>list two </li>
+            <li>list three </li>
+            <li>list four </li>
+        </ul>
+
+        <hr>
+
+        <!-- <h1 id="croods"></h1> -->
+
+        <div class="container form-group">
+            <label for="name">Your Name?</label>
+            <input id="name" type="text" placeholder="Name" class="form-control">
+            <label for="name">Your Email?</label>
+            <input id="email" type="email" placeholder="Name" class="form-control">
+        </div>
+
+
+
+        <script>
+        
+        $(document).ready(function(){
+            $(document).on('mousemove',function(e){
+                $("#croods").html('Croods: '+e.clientY+' X:'+e.clientX);
+            });
+        });
+        
+        </script>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css('background','pink');
+            });
+
+            $("input").blur(function(){
+                $(this).css('background','white');
+            });
+
+        });
+    </script>
+
+    
+</body>
+
+</html>
