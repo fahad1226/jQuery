@@ -1,0 +1,19 @@
+[
+    {
+        "firstName":"Fahad",
+        "lastName":"Bin Munir",
+        "Email":"fahadbinmnr@gmail.com"
+    },
+    
+    {
+        "firstName":"Jon",
+        "lastName":"Doe",
+        "email":"jondoe@gmail.com"
+    },
+
+    {
+        "firstName":"Dustin",
+        "lastName":"Shiffman",
+        "Email":"dustin@gmail.com"
+    }
+]

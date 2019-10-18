@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <div class="anchestors">
+            <div>div
+                <ul>ul
+                    <li>li
+                        <span>span</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </body>
+    <script>
+        
+        //parent()
+        //parents()
+        //parentsUntil()
+
+        $(document).ready(function(){
+            $("span").parentsUntil("div").css({
+                "color" : "orange",
+                "border" : "2px solid green"
+            });
+        });
+    </script>
+
+</html>

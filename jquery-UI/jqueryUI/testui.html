@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./jquery-ui.css">
+    <link rel="stylesheet" href="./jquery-ui.structure.css">
+    <link rel="stylesheet" href="./jquery-ui.theme.css">
+</head>
+<body>
+
+    <div id="date">
+        <h2>Date Picker</h2>
+        <input placeholder="Click To Select Date" id="dateinput" type="text">
+    </div>
+    
+</body>
+<script src="./external/jquery/jquery.js"></script>
+<script src="./jquery-ui.js"></script>
+
+
+
+<script>
+    $("#dateinput").datepicker({
+        numberOfMonths:1,
+        changeYear:true,
+        changeMonth:true,
+        showOtherMonths:true,
+        minDate: new Date(2017,3,1),
+        maxDate: new Date(2021,1,23)
+    });
+</script>
+</html>
